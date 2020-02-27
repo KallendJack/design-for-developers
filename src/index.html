@@ -4,55 +4,90 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Forum|Nunito+Sans&display=swap"
+      rel="stylesheet"
+    />
     <title>Design for Developers</title>
   </head>
   <body>
     <div class="content-container">
-      <h1>Stop Now Start Soon Later</h1>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius eum
-        accusamus atque doloremque totam assumenda exercitationem aliquid nam.
-        Aperiam neque repellat hic soluta, ullam cum. Perspiciatis voluptate
-        repudiandae magni qui neque perferendis.
-      </p>
-      <button>View More</button>
+      <div class="container">
+        <div class="content-inner">
+          <h1>Stop Now Start Soon Later</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius eum
+            accusamus atque doloremque totam assumenda exercitationem aliquid
+            nam. Aperiam neque repellat hic soluta, ullam cum. Perspiciatis
+            voluptate repudiandae magni qui neque perferendis.
+          </p>
+          <button>View More</button>
+        </div>
+      </div>
+      <svg
+        class="triangle"
+        viewBox="0 0 1440 148"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+        preserveAspectRatio="none"
+      >
+        <path d="M720.533 148L1440 0H0L720.533 148Z" fill="#ccc" />
+      </svg>
     </div>
     <style>
       * {
         padding: 0;
         margin: 0;
         box-sizing: border-box;
+        font-family: "Nunito Sans";
       }
 
       body {
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
-        padding: 10rem;
+        font-family: "Nunito Sans";
+      }
+
+      .container {
+        max-width: 1440px;
+        margin: 0 auto;
       }
 
       .content-container {
+        background-color: #ccc;
+        position: relative;
+        padding: 2rem;
+      }
+
+      .triangle {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        height: 150px;
+        width: 100%;
+      }
+
+      .content-inner {
         max-width: 500px;
       }
 
       h1 {
         padding-bottom: 2rem;
-        font-size: 3rem;
+        font-size: 4rem;
         line-height: 0.9;
-        font-weight: bold;
-        color: rgb(44, 44, 44);
+        font-family: "Forum";
       }
 
       p {
-        color: rgb(44, 44, 44);
+        color: rgb(62, 62, 62);
         line-height: 1.7;
         padding-bottom: 2rem;
+        font-size: 1.1rem;
       }
 
       button {
         background-color: rgb(44, 150, 249);
-
         padding: 1rem 2rem;
         text-transform: uppercase;
-        font-size: 1rem;
+        font-size: 0.8rem;
         letter-spacing: 0.2em;
         color: white;
         border-radius: 3px;
